@@ -1,0 +1,806 @@
+@charset "UTF-8";
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+  /*
+	2. Remove default margin
+  */
+  * {
+	margin: 0;
+	transition: width 2s, height 4s;
+  }
+  /*
+	3. Allow percentage-based heights in the application
+  */
+  html, body {
+	height: 100%;
+  }
+  /*
+	Typographic tweaks!
+	4. Add accessible line-height
+	5. Improve text rendering
+  */
+  body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	padding: 20px;
+	background-color: #F5F5F5;
+	flex: auto;
+	width: auto;
+  }
+  /*
+	6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+  }
+  /*
+	7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+	font: inherit;
+  }
+  /*
+	8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+  }
+  /*
+
+
+/* html */
+html,
+html * {
+	box-sizing: border-box;
+	position: relative;
+}
+
+
+
+/* Header Section */
+.header {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	display: inline-flex;
+	flex-direction: row;
+	font-weight: bold;
+}
+
+header {
+	font-display: block;
+	text-align: right;
+	position: static;
+	padding: 1.5%;
+	z-index: 50;
+	width: auto;
+	display: grid;
+	border-bottom: 1px solid #E2E1DF;
+	background-color: #F1F1F0;
+	border-radius: 10px;
+}
+
+/* Button Section */
+* a {
+	text-decoration: none;
+	color: #B68D40;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	display: inline-block;
+}
+
+a:hover {
+	opacity: 0.6;
+	text-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	cursor: pointer;
+	color: #122620; 
+	transition: .4s;
+}
+
+.About-button {
+	margin-right: 20px;
+}
+
+
+.Project-button {
+	margin-right: 20px;
+}
+
+
+.Resume-button {
+	margin-right: 20px;
+}
+
+/* About Me Page Section */
+
+h1 {
+	text-align: left;
+	font-display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #000000;
+}
+
+h1:hover {
+	color: #B68D40;
+	cursor: pointer;
+}
+
+.opening {
+	letter-spacing: 0.10em;
+	display: grid;
+	color: #000000;
+	font-style: normal;
+	font-size: 1.8em;
+	text-align: left;
+	margin-bottom: 1%;
+	margin-left: 2%;
+	margin-right: 5%;
+}
+
+
+/* Img Home Page */
+
+.Hero img {
+	width: 430px;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	margin-top: 1.5em;
+	margin-bottom: auto;
+	margin-right: 0%;
+	margin-left: 0%;
+	position: relative;
+	display: block;
+  }
+
+  .paragraph-card {
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 0%;
+	margin-bottom: auto;
+	margin-right: 0%;
+	margin-left: 0%;
+	position: inherit;
+	font-size: large;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	display: inline-flex;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	position: relative;
+	background: #D6AD60;
+	width: 350px;
+	padding: 3rem;
+	display: grid;
+	border-radius: 4px;
+}
+
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	
+}
+
+.container {
+	padding: 2px 16px;
+	background: #F5F5F5;
+  }
+
+ 
+  .liz-card {
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	color: #B68D40;
+	letter-spacing: 0.3em;
+  }
+
+/* About Me Paragraph */
+.Hero {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.intro {
+	font-family: 'Raleway', sans-serif;
+	align-items: center;
+	font-size: 1.5rem;
+	margin-bottom: 3%;
+	line-height: 1.5em;
+}
+
+  .Main-opening {
+	width: 550px;
+  }
+
+  .main {
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'Raleway', sans-serif;
+  }
+
+  .facts {
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'Raleway', sans-serif;
+}
+
+.follow {
+	font-family: 'Raleway', sans-serif;
+	color: #104210;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-top: 10%;
+  }
+
+  /* Social Media Buttons */
+.fa-linkedin {
+	background: #000000;
+	color: white;
+	display: flex;
+	padding: 20px;
+  	font-size: 60px;
+ 	width: 60px;
+  	text-align: center;
+  	text-decoration: none;
+ 	margin: 5px 2px;
+  	border-radius: 60%;
+	text-align: center;
+	justify-content: center;
+  	align-items: center;
+}
+
+
+.fa-codepen {
+	background: #000000;
+	color: white;
+	display: flex;
+	padding: 20px;
+  	font-size: 60px;
+ 	width: 60px;
+  	text-align: center;
+  	text-decoration: none;
+ 	margin: 5px 2px;
+  	border-radius: 60%;
+	text-align: center;
+	justify-content: center;
+  	align-items: center;
+}
+
+.fa-github { 
+	background: #000000;
+	color: white;
+	display: flex;
+	padding: 20px;
+  	font-size: 60px;
+ 	width: 60px;
+  	text-align: center;
+  	text-decoration: none;
+ 	margin: 5px 2px;
+  	border-radius: 60%;
+	text-align: center;
+	justify-content: center;
+  	align-items: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	color: #D6AD60;
+	cursor: pointer;
+}
+
+  /* Resume */
+
+
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+p {
+	
+	font-size: 1.5rem;
+	font-family: 'Raleway', sans-serif;
+}
+/* Main Card - Home Page*/
+
+
+section {
+	text-align: left;
+	margin: 40px 30px 50px 20px;
+}
+
+.about-me {
+background-color: #122620;
+padding-bottom: 20%;
+margin-top: 10%;
+border-radius: 5px;
+
+}
+
+
+
+/* Project Page */
+
+.project-opening {
+	font-size: 2.5em;
+	color: #104210;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+  .card-project {
+	box-shadow: 0 1px 5px;
+	transition: 0.3s;
+	position: relative;
+	background: #2C3E40;
+	width: 350px;
+	height: 250px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	border-radius: 4px;
+  }
+  
+
+  .card-project:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  }
+
+  .container-projects {
+	padding: 2px 20px;
+	padding-top: 2px 16px;
+	background: #F5F5F5;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1px;
+  }
+
+  .Snow-img {
+	border-radius: 1px;
+  }
+
+  .snow-project-paragraph {
+	font-size: 15px;
+	padding-top: 30%;
+  }
+
+
+/* Resume Section */
+
+.Resume-header {
+	background: #f0f0f0;
+	border-bottom: 1px solid #c6c9c3;
+	text-align: center;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.main-resume {
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 3%;
+  }
+
+.resume-card {
+	background: #ffffff;
+	position: relative;
+	border-radius: 7px;
+	width: 60%;
+	height: 500px;
+	padding: 1px;
+}
+.resume-link {
+	color: #122620;
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+	
+}
+
+.link-resume {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color:#D6AD60;
+	font-size: 1em;
+	justify-content: right;
+}
+
+.link-resume:hover {
+	cursor: pointer;
+	color: #104210;
+	font-size: 1em;
+}
+
+
+.resume-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.resume-paragraph {
+	text-align: left;
+	position: relative;
+	font-size: larger;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+}
+
+.list-skills {
+	text-align: left;
+	position: relative;
+	font-size: larger;
+	font-weight: bold;
+	color: #000000;
+}
+
+.skill-lists {
+	text-align: left;
+	position: relative;
+	z-index: 0;
+	font: 1em sans-serif;
+	font-size: 1.2rem;
+}
+
+
+.lists {
+	text-align: left;
+	position: relative;
+	z-index: 0;
+	font: 1em sans-serif;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Raleway', sans-serif;
+	
+}
+.resume-container {
+	padding: 2px 16px;
+	border-radius: 10px;
+  }
+
+  .city-of-meriden-date {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #104210;
+	font-weight: bold;  
+	font-size: 1.2em;
+	align-items: center;
+}
+
+.resume-paragraph-card {
+	font-family: 'Raleway', sans-serif;
+	color: #B68D40;
+	font-weight: bold;
+	font-size: large;
+	display: flex;
+	flex-direction: column;
+}
+
+.resume-paragraph-card2{
+	font-family: 'Raleway', sans-serif;
+	color: #B68D40;
+	font-weight: bold;
+	width: auto;
+	font-size: large;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.skills-resume {
+	width: 30%;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
+
+.Skills {
+	font-size: 1.3em;
+	color: #B68D40;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.list-of-skills {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	list-style: none;
+}
+
+.All-Skills {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+
+.All-Stills:hover {
+	box-shadow: 0 8px 16px 0 rgba(1,0,0,0.1);
+}
+
+.resume-opening {
+	color: #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+}
+
+.Hero-school {
+	text-align: left;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.95em;
+	font-weight: bold;
+	color: #B68D40;
+	text-align: left;
+	vertical-align: text-top; 
+
+}
+
+.list-attended {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	font-family: 'Raleway', sans-serif;
+	color: #122620;
+	list-style: none;
+}
+
+
+.Hero-resume {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.Education {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: column;
+	color: #B68D40;
+}
+
+  /* footer */
+footer {
+	font-display: block;
+	position: relative;
+	width: auto;
+	text-align: end;
+	color: #000000;
+	background-color: #F5F5F5;
+	margin-top: 20%;
+	margin-bottom: 0%;
+	padding: 0%;
+	display: flow-root;
+	border-top: 1px solid #999999;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #999999;
+	padding-top: 0%;
+	padding-bottom: 3%;
+}
+
+
+
+.green-footer {
+	background-color: #F5F5F5;
+}
+
+.footer-home {
+	margin-right: 10px;
+  }
+
+  .email {
+	margin-right: 10px;
+  }
+
+  /* For Mobile Phone */
+  @media only screen and (max-resolution: 150dpi) and (max-width: 767px), (min-width: 1023px ) and (orientation: portrait)
+  {
+	* {
+		width: auto;
+		height: auto;
+		box-sizing: border-box;
+		margin: 0%;
+		transition: width 2s, height 4s;
+		  }
+	}
+
+  
+
+
+	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
+	{
+	.Hero {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		overflow-y: hidden;
+		background: #ecedeb;
+		border-radius: 5px;
+		padding: 5%;
+	}
+
+	
+	a:hover {
+		opacity: 0.6;
+		text-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+		cursor: pointer;
+		color: #122620; 
+		transition: .4s;
+	}
+	.liz-card {
+		text-align: center;
+		font-family: 'Inter', sans-serif;
+		color: #B68D40;
+		letter-spacing: 0.3em;
+		padding: 1%;
+	  }
+
+	  .card {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		position: relative;
+		background: #D6AD60;
+		width: 350px;
+		padding: 3rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+		display: grid;
+	}
+
+}
+ 
+
+
+
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
+{
+	header {
+		display: block;
+		padding-right: 1em;
+		width: auto;
+		justify-content: right;
+		width: auto;
+		border-bottom: 1px solid #E2E1DF;
+		
+  }
+  nav {
+	display: block;
+		width: auto;
+		justify-content: right;
+		max-width: auto;
+		
+  }
+
+
+  @media only screen and (max-resolution: 150dpi) and (max-width: 768px) and (orientation: portrait)
+  {
+	*a {
+		font-size: 5px;
+	}
+
+  }
+
+  .main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+  }
+	}
+
+	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
+	{
+		.opening {
+			width: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			text-align: center;
+			align-items: center;
+			margin-left: 5%;
+			overflow-y: hidden;
+			overflow-x: hidden;
+			font-size: 1.5em;
+			padding-top: 5%;
+		}
+	}
+
+	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
+	{
+		.intro {
+		  font-size: 20px;
+		  width: auto;
+		  display: flex;
+		  flex-direction: column;
+		  text-align: left;
+		  padding: 0 7em;
+		  
+		  overflow-x: hidden;
+		  line-height: 1.7em;
+		}
+		
+		@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
+		{
+	
+		.facts {
+			display: flex;
+		  	flex-direction: column;
+			font-size: 20px;
+			width: auto;
+			text-align: left;
+			padding: 0 7em;
+			margin: 0% 0% 0% 0%;
+			margin-top: 4%;
+			line-height: 1.7em;
+			overflow-x:aut
+		}
+		.follow {
+			font-size: 25px;
+			text-align: center;
+		}
+	}
+
+	@media only screen and (max-resolution: 150dpi) and (max-width: 767px), (max-height: 926px) and (orientation: portrait) 
+	{
+			*footer {
+			display: flex;
+			flex-direction: row;
+			width: auto;
+			justify-content: center;
+			max-width: auto;
+			}
+
+			.footer-home {
+				display: none;
+			}
+
+			.email {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+		}
+	}
