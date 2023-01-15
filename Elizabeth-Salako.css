@@ -254,6 +254,16 @@ h1:hover {
 	margin-top: 10%;
   }
 
+  .follow2 {
+	text-align: center;
+  }
+
+  .follow2-button {
+	text-align: center;
+	justify-content: center;
+  	align-items: center;
+  }
+
   /* Social Media Buttons */
 .fa-linkedin {
 	background: #000000;
@@ -348,21 +358,41 @@ border-radius: 5px;
 	color: #104210;
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
+	
+	
 }
 
   .card-project {
 	box-shadow: 0 1px 5px;
 	transition: 0.3s;
 	position: relative;
-	background: #2C3E40;
-	width: 350px;
-	height: 250px;
-	padding: 2rem;
+	background: #ecedeb;
+	width: 450px;
+	height: auto;
+	padding: 1rem;
 	display: flex;
-	flex-direction: row;
 	border-radius: 4px;
+	flex-direction: row;
+	
   }
   
+  .card-project2 {
+	
+	box-shadow: 0 1px 5px;
+	transition: 0.3s;
+	position: relative;
+	background: #ecedeb;
+	width: 350px;
+	height: auto;
+	padding: 1rem;
+	display: flex;
+	border-radius: 4px;
+	flex-direction: row;
+	margin-top: 20px;
+
+	
+	
+  }
 
   .card-project:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -371,10 +401,12 @@ border-radius: 5px;
   .container-projects {
 	padding: 2px 20px;
 	padding-top: 2px 16px;
-	background: #F5F5F5;
+	background: #ffffff;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	border-radius: 1px;
+	width: auto;
+	height: auto;
   }
 
   .Snow-img {
@@ -386,6 +418,9 @@ border-radius: 5px;
 	padding-top: 30%;
   }
 
+h3 {
+margin-bottom: 80px;
+  }
 
 /* Resume Section */
 
@@ -804,3 +839,11 @@ footer {
 			}
 		}
 	}
+
+	@media only screen and (max-resolution: 150dpi) and (max-width: 767px), (min-width: 1023px ) and (orientation: portrait)
+  {
+	h3 {
+		
+		margin: 90px;
+	}
+  }
