@@ -819,7 +819,7 @@ footer {
 			margin: 0% 0% 0% 0%;
 			margin-top: 4%;
 			line-height: 1.7em;
-			overflow-x:aut
+			overflow-x: hidden;
 		}
 		.follow {
 			font-size: 25px;
