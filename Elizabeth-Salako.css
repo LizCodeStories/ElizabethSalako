@@ -81,8 +81,8 @@ header {
 	width: auto;
 	display: grid;
 	border-bottom: 1px solid #E2E1DF;
-	background-color: #F1F1F0;
-	border-radius: 10px;
+	background-color: #1e291c;
+	border-radius: 6px;
 }
 
 /* Button Section */
@@ -99,7 +99,7 @@ a:hover {
 	opacity: 0.6;
 	text-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 	cursor: pointer;
-	color: #122620; 
+	color: #ffffff; 
 	transition: .4s;
 }
 
@@ -214,6 +214,8 @@ h1:hover {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	background-color: #f0eeeb;
+	border-radius: 8px;
 }
 
 .intro {
@@ -370,7 +372,13 @@ border-radius: 5px;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
+	
 
+}
+
+.project-body {
+	background-color: #f0eeeb;
+	border-radius: 7px;
 }
 
 .coffee-shop-info {
@@ -604,7 +612,7 @@ footer {
 	margin-bottom: 0%;
 	padding: 0%;
 	display: flow-root;
-	border-top: 1px solid #999999;
+	border-top: 1px solid #a6ada5;
 }
 
 .copyright {
