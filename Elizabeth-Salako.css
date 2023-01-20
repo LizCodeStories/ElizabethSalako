@@ -135,7 +135,9 @@ h1:hover {
 
 .opening {
 	letter-spacing: 0.10em;
-	display: grid;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
 	color: #000000;
 	font-style: normal;
 	font-size: 1.8em;
@@ -183,7 +185,8 @@ h1:hover {
 	background: #D6AD60;
 	width: 350px;
 	padding: 3rem;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	border-radius: 4px;
 }
 
@@ -806,3 +809,4 @@ footer {
 		margin: 90px;
 	}
   }
+
