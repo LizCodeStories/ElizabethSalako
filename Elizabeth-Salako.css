@@ -220,7 +220,7 @@ h1:hover {
 	transition: 0.3s;
 	position: relative;
 	background: #D6AD60;
-	width: 350px;
+	width: 330px;
 	padding: 3rem;
 	display: flex;
 	flex-direction: column;
@@ -234,7 +234,7 @@ h1:hover {
 }
 
 .container {
-	padding: 2px 16px;
+	padding: 2px 4px 8px 6px;
 	background: #F5F5F5;
   }
 
@@ -251,16 +251,19 @@ h1:hover {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	background-color: #f0eeeb;
+	background-image: url("IMG_0879.JPG");
 	border-radius: 8px;
+	background-repeat: no-repeat;
 }
+
 
 .intro {
 	font-family: 'Raleway', sans-serif;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-bottom: 3%;
 	line-height: 1.5em;
+	margin-left: 15px;
 }
 
   .Main-opening {
@@ -278,7 +281,7 @@ h1:hover {
   }
 
   .facts {
-	width: 1130px;
+	
 	max-width: 95%;
 	margin: 0 auto;
 	display: flex;
@@ -413,12 +416,19 @@ border-radius: 5px;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	
 
 }
 
+.Hero-resume-body {
+	background: #ecedeb;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
 .project-body {
-	background-color: #f0eeeb;
+	background: #ecedeb;
 	border-radius: 7px;
 }
 
@@ -517,8 +527,21 @@ border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
-	
 }
+
+.lists1{
+	text-align: left;
+	position: relative;
+	z-index: 0;
+	font: 1em sans-serif;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Raleway', sans-serif;
+	margin-right: 3%;
+	padding: 10px;
+}
+
 .resume-container {
 	padding: 2px 16px;
 	border-radius: 10px;
@@ -640,7 +663,7 @@ border-radius: 5px;
 
 .tech-skills {
 	list-style: none;
-	font-size: 1rem;
+	font-size: .9rem;
 	
 }
 
@@ -704,7 +727,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		overflow-y: hidden;
-		background: #ecedeb;
+		background-image: url("IMG_0879.JPG");
 		border-radius: 5px;
 		padding: 5%;
 		
@@ -785,7 +808,7 @@ footer {
 	top: 70px;
 	gap: 0;
 	flex-direction: column;
-	background-color: #122620;
+	background-image: url("IMG_0876.JPG");
 	width: 100%;
 	text-align: center;
 	transition: 0.3s;
@@ -809,7 +832,7 @@ footer {
 }
 
 a:hover {
-color: #F5F5F5;
+color: #122620;
 }
 
 .nav-branding {
@@ -896,7 +919,20 @@ color: #F5F5F5;
 
 		.tech-skills {
 			list-style: none;
-			font-size: 1rem;
+			font-size: .9rem;
+			
+		}
+
+		.lists1 {
+			text-align: left;
+			position: relative;
+			z-index: 0;
+			font: 1em sans-serif;
+			font-size: 1.2rem;
+			display: flex;
+			flex-direction: column;
+			font-family: 'Raleway', sans-serif;
+			margin-left: 5%;
 			
 		}
 	}
@@ -911,11 +947,12 @@ color: #F5F5F5;
 		  display: flex;
 		  flex-direction: column;
 		  text-align: left;
-		  padding: 30%;
+		  padding: 28%;
 		  padding-top: 0;
 		  padding-bottom: 0;
 		  overflow-x: hidden;
 		  line-height: 1.7em;
+		  margin-right: 10px;
 		}
 		
 		.facts {
