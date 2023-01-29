@@ -11,6 +11,7 @@
   */
   * {
 	margin: 0;
+	padding: 0;
 	transition: width 2s, height 4s;
   }
   /*
@@ -31,6 +32,7 @@
 	background-color: #F5F5F5;
 	flex: auto;
 	width: auto;
+	position: relative;
   }
   /*
 	6. Improve media defaults
@@ -63,13 +65,14 @@ html * {
 
 
 
-/* Header Section */
+
 .header {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #000000;
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	font-weight: bold;
+	transition: 0.7s ease;
 }
 
 header {
@@ -77,21 +80,65 @@ header {
 	text-align: right;
 	position: static;
 	padding: 1.5%;
-	z-index: 50;
+	
 	width: auto;
 	display: grid;
 	border-bottom: 1px solid #E2E1DF;
 
 }
 
-/* Button Section */
+.nav-branding {
+	font-size: 1.3rem;
+	color: #122620;
+}
+
+.nav-branding:hover {
+	color: #B68D40;
+}
+
+li {
+	list-style: none;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	margin-left: auto;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: right;
+	gap: 20px;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #104210;
+}
+
+
+
 * a {
 	text-decoration: none;
 	color: #B68D40;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.1em;
-	font-weight: bold;
 	display: inline-block;
+	
 }
 
 a:hover {
@@ -99,22 +146,9 @@ a:hover {
 	text-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 	cursor: pointer;
 	color: #122620; 
-	transition: .4s;
+	transition: 0.7s ease;
 }
 
-.About-button {
-	margin-right: 20px;
-}
-
-
-.Project-button {
-	margin-right: 20px;
-}
-
-
-.Resume-button {
-	margin-right: 20px;
-}
 
 /* About Me Page Section */
 
@@ -368,8 +402,6 @@ border-radius: 5px;
 	color: #122620;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	
-	
 }
 
 .coffee-shop-section {
@@ -391,13 +423,6 @@ border-radius: 5px;
 	text-align: center;
 	display: block;
 	font-size: 1.3rem;
-}
-
-hr {
-	border: 0;
-    width: 96%;
-    color: #FFFF00;
-    height: 1px;
 }
 
 /* Resume Section */
@@ -672,6 +697,16 @@ footer {
 		
 	}
 
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: auto;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	  }
+		
+
 	
 	a:hover {
 		opacity: 0.6;
@@ -704,46 +739,56 @@ footer {
 }
  
 
-
-
-
-@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
+@media (max-width: 768px) 
 {
-	header {
-		display: block;
-		padding-right: 1em;
-		width: auto;
-		justify-content: right;
-		width: auto;
-		border-bottom: 1px solid #E2E1DF;
-		
-  }
-  nav {
+ 
+  .hamburger{
 	display: block;
-		width: auto;
-		justify-content: right;
-		max-width: auto;
-		
-  }
+	
+}
+.hamburger.active .bar:nth-child(2){
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+	transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+	transform: translateY(-8px) rotate(-45deg);
+}
 
-
-  @media only screen and (max-resolution: 150dpi) and (max-width: 768px) and (orientation: portrait)
-  {
-	*a {
-		font-size: 5px;
-	}
-
-  }
-
-  .main {
-	display: flex;
+.nav-menu{
+	position: fixed;
+	left: -100%;
+	top: 70px;
+	gap: 0;
 	flex-direction: column;
-	justify-content: center;
-	max-width: auto;
-	overflow-y: hidden;
-	overflow-x: hidden;
-  }
+	background-color: #122620;
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+	z-index: 10;
+}
+
+.nav-menu.active{
+	left: 0;
 	}
+
+.nav-item{
+	margin: 16px 0;
+}
+
+* a {
+	text-decoration: none;
+	color: #B68D40;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.1em;
+
+}
+
+a:hover {
+color: #F5F5F5;
+}
+}
 
 	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
 	{
@@ -762,7 +807,28 @@ footer {
 			padding-top: 5%;
 			color: #1a3b31;
 		}
+
+		/*In process 01/25/23 */
+		.project-opening {
+			font-size: 1.5em;
+			color: #122620;
+			text-align: center;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		.coffee-shop-info {
+			text-align: center;
+			display: block;
+			font-size: 1rem;
+		}
+
+		.follow2 {
+			font-size: 1.3rem;
+		}
+		
 	}
+
+	
 
 	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
 	{
@@ -822,10 +888,5 @@ footer {
 		}
 	}
 
-	@media only screen and (max-resolution: 150dpi) and (max-width: 767px), (min-width: 1023px ) and (orientation: portrait)
-  {
-	.in-process {
-		margin: 90px;
-	}
-  }
+
 
