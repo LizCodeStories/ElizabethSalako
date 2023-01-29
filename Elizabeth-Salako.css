@@ -80,7 +80,6 @@ header {
 	text-align: right;
 	position: static;
 	padding: 1.5%;
-	
 	width: auto;
 	display: grid;
 	border-bottom: 1px solid #E2E1DF;
@@ -97,6 +96,10 @@ header {
 }
 
 li {
+	list-style: circle;
+}
+
+.nav-item {
 	list-style: none;
 }
 
@@ -631,6 +634,16 @@ border-radius: 5px;
 	color: #B68D40;
 }
 
+.the-list-of-school {
+	list-style: none;
+}
+
+.tech-skills {
+	list-style: none;
+	font-size: 1rem;
+	
+}
+
   /* footer */
 footer {
 	font-display: block;
@@ -736,6 +749,16 @@ footer {
 		flex-direction: column;
 	}
 
+	header {
+		font-display: block;
+		text-align: right;
+		position: static;
+		padding: 1.5%;
+		width: auto;
+		display: grid;
+		border-bottom: 1px solid #E2E1DF;
+		
+	}
 }
  
 
@@ -788,7 +811,13 @@ footer {
 a:hover {
 color: #F5F5F5;
 }
+
+.nav-branding {
+	font-size: 1.4rem;
+	color: #122620;
 }
+}
+
 
 	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
 	{
@@ -825,7 +854,51 @@ color: #F5F5F5;
 		.follow2 {
 			font-size: 1.3rem;
 		}
+
+		.Resume-opening {
+			font-size: 1.3rem;
+		}
+
+		.city-of-meriden-date {
+			font-size: 1rem;
+		}
 		
+		.resume-paragraph-card {
+			font-size: 1rem;
+		}
+
+		.lists {
+			list-style: circle;
+		}
+
+		.Education {
+			font-size: 1.1rem;
+		}
+
+		.list-attended {
+			font-size: 1rem;
+			list-style: none;
+		}
+
+		.the-list-of-school {
+			list-style: none;
+			font-size: 1rem;
+			
+		}
+
+		.card2 {
+			font-size: 1rem;
+		}
+
+		.Skills {
+			font-size: 1.2rem;
+		}
+
+		.tech-skills {
+			list-style: none;
+			font-size: 1rem;
+			
+		}
 	}
 
 	
