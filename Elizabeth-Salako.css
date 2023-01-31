@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&family=Inter+Tight&family=Manjari&family=Quicksand:wght@500&family=Varela&display=swap');
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -170,14 +170,14 @@ h1:hover {
 }
 
 .opening {
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: 0.10em;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 0.13em;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
-	color: #122620;
+	color: #ad8333;
 	font-style: normal;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	text-align: left;
 	margin-bottom: 1%;
 	margin-left: 2%;
@@ -211,7 +211,8 @@ h1:hover {
 	position: inherit;
 	font-size: large;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	color: #000000;
 	display: inline-flex;
 }
 
@@ -245,7 +246,7 @@ h1:hover {
   .liz-card {
 	text-align: center;
 	font-family: 'Inter', sans-serif;
-	color: #B68D40;
+	color: #a27521;
 	letter-spacing: 0.3em;
   }
 
@@ -261,12 +262,13 @@ h1:hover {
 
 
 .intro {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	align-items: center;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	margin-bottom: 3%;
 	line-height: 1.5em;
 	margin-left: 15px;
+	color: #000;
 }
 
   .Main-opening {
@@ -284,13 +286,12 @@ h1:hover {
   }
 
   .facts {
-	
 	max-width: 95%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .follow {
@@ -298,7 +299,7 @@ h1:hover {
 	color: #104210;
 	letter-spacing: 0.2em;
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	margin-top: 10%;
   }
 
@@ -444,13 +445,12 @@ border-radius: 5px;
 /* Resume Section */
 
 .Resume-header {
-	
 	border-bottom: 1px solid #D6AD60;
 	text-align: center;
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
-	
+	font-size: 1.2rem;
 }
 
 .main-resume {
@@ -462,7 +462,7 @@ border-radius: 5px;
   }
 
 .resume-card {
-	background: #ffffff;
+	background: #f0efeb;
 	position: relative;
 	border-radius: 7px;
 	width: 60%;
@@ -524,25 +524,23 @@ border-radius: 5px;
 .lists {
 	text-align: left;
 	position: relative;
-	z-index: 0;
 	font: 1em sans-serif;
 	font-size: 1.2rem;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
+	padding: 1px;
 }
 
 .lists1{
 	text-align: left;
 	position: relative;
-	z-index: 0;
 	font: 1em sans-serif;
 	font-size: 1.2rem;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
-	margin-right: 3%;
-	padding: 10px;
+	padding: 1px;
 }
 
 .resume-container {
@@ -562,7 +560,7 @@ border-radius: 5px;
 	font-family: 'Raleway', sans-serif;
 	color: #B68D40;
 	font-weight: bold;
-	font-size: large;
+	font-size: 1.3em;
 	display: flex;
 	flex-direction: column;
 }
@@ -783,7 +781,6 @@ footer {
 		width: auto;
 		display: grid;
 		border-bottom: 1px solid #E2E1DF;
-		
 	}
 }
  
@@ -860,7 +857,7 @@ color: #F5F5F5;
 			overflow-x: hidden;
 			font-size: 1.5em;
 			padding-top: 5%;
-			color: #1a3b31;
+			color: #a27521;
 		}
 
 		/*In process 01/25/23 */
@@ -895,6 +892,7 @@ color: #F5F5F5;
 
 		.lists {
 			list-style: circle;
+			margin-left: 5%;
 		}
 
 		.Education {
@@ -927,14 +925,7 @@ color: #F5F5F5;
 		}
 
 		.lists1 {
-			text-align: left;
-			position: relative;
-			z-index: 0;
-			font: 1em sans-serif;
-			font-size: 1.2rem;
-			display: flex;
-			flex-direction: column;
-			font-family: 'Raleway', sans-serif;
+			list-style: circle;
 			margin-left: 5%;
 			
 		}
