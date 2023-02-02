@@ -193,7 +193,6 @@ h1:hover {
 	object-fit: cover;
 	object-position: center;
 	overflow: hidden;
-	margin-top: 1.5em;
 	margin-bottom: auto;
 	margin-right: 0%;
 	margin-left: 0%;
@@ -231,6 +230,7 @@ h1:hover {
 
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	transition: 0.7s;
 	
 }
 
@@ -809,9 +809,10 @@ footer {
 	gap: 0;
 	flex-direction: column;
 	background-image: url("IMG_0884.JPG");
+	background-repeat: no-repeat;
 	width: 100%;
 	text-align: center;
-	transition: 0.3s;
+	transition: 0.4s;
 	z-index: 10;
 }
 
@@ -832,7 +833,9 @@ footer {
 }
 
 a:hover {
-color: #F5F5F5;
+color: #fff;
+transition: 0.6s;
+text-shadow: 7px #D6AD60;
 }
 
 .nav-branding {
