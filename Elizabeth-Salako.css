@@ -155,19 +155,9 @@ a:hover {
 
 /* About Me Page Section */
 
-h1 {
-	text-align: left;
-	font-display: block;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-	color: #000000;
-}
 
-h1:hover {
-	color: #B68D40;
-	cursor: pointer;
-}
+
+
 
 .opening {
 	font-family: 'Quicksand', sans-serif;
@@ -248,6 +238,7 @@ h1:hover {
 	font-family: 'Inter', sans-serif;
 	color: #a27521;
 	letter-spacing: 0.3em;
+	font-size: 1rem;
   }
 
 /* About Me Paragraph */
@@ -375,10 +366,6 @@ h1:hover {
   /* Resume */
 
 
-h2 {
-	font-family: 'Source Sans Pro', sans-serif;
-	
-}
 
 p {
 	
@@ -466,6 +453,15 @@ border-radius: 5px;
 	height: 500px;
 	padding: 1px;
 }
+/*Wait */
+.Resume-opening {
+	color: #122620;
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
 .resume-link {
 	color: #122620;
 	font-family: 'Raleway', sans-serif;
@@ -713,9 +709,7 @@ footer {
 		  }
 	}
 
-  
-
-
+ 
 	@media only screen and (max-resolution: 150dpi) and (max-width: 768px), (max-height: 926px) and (orientation: portrait) 
 	{
 	.Hero {
@@ -753,6 +747,7 @@ footer {
 		color: #B68D40;
 		letter-spacing: 0.3em;
 		padding: 1%;
+		font-size: .95rem;
 	  }
 
 	  .card {
