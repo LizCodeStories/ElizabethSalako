@@ -165,7 +165,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
-	color: #ad8333;
+	color: #986300;
 	font-style: normal;
 	font-size: 1.9em;
 	text-align: left;
@@ -251,6 +251,10 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
+.Hero:before {
+	z-index: 1;
+}
+
 
 .intro {
 	font-family: 'Quicksand', sans-serif;
@@ -260,10 +264,12 @@ a:hover {
 	line-height: 1.5em;
 	margin-left: 15px;
 	color: #000;
+	z-index: 9;
 }
 
   .Main-opening {
 	width: 550px;
+	z-index: 5;
   }
 
   .main {
@@ -283,6 +289,7 @@ a:hover {
 	align-items: center;
 	justify-content: space-around;
 	font-family: 'Quicksand', sans-serif;
+	z-index: 10;
 }
 
 .follow {
@@ -850,7 +857,7 @@ text-shadow: 7px #D6AD60;
 			overflow-x: hidden;
 			font-size: 1.5em;
 			padding-top: 5%;
-			color: #a27521;
+			color: #986300;;
 		}
 
 		/*In process 01/25/23 */
