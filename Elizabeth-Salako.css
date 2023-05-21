@@ -779,6 +779,30 @@ footer {
 	background-color: #D6AD60;
   }
 
+  .dark-mode a {
+	color: #ffbf45;
+  }
+
+  .dark-mode .city-of-meriden-date {
+	color: #fff;
+  }
+
+  .dark-mode .resume-paragraph-card {
+	color: #ffbf45;
+  }
+
+  .dark-mode .Education {
+	color: #ffbf45;
+  }
+
+  .dark-mode .tech-skills {
+	color: #fff;
+  }
+
+  .dark-mode .the-list-of-school {
+	color: #fff;
+  }
+
   
   /* Styles for the switch toggle button */
   .switch {
@@ -804,6 +828,11 @@ footer {
 	background-color: #ccc;
 	transition: .4s;
 	border-radius: 34px;
+  }
+
+  .slider:hover {
+	opacity: 0.7;
+	cursor: pointer;
   }
   
   .slider:before {

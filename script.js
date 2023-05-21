@@ -27,3 +27,5 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         body.classList.remove('dark-mode');
       }
     });
+
+    
