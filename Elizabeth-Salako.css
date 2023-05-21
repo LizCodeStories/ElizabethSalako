@@ -85,7 +85,7 @@ header {
 	width: auto;
 	display: grid;
 	border-bottom: 1px solid #E2E1DF;
-
+	border-radius: 10px;
 }
 
 .nav-branding {
@@ -699,11 +699,11 @@ footer {
 	position: relative;
 	width: auto;
 	text-align: end;
-	color: #000000;
 	margin-bottom: 0%;
 	padding: 0%;
 	display: flow-root;
-	border-top: 1px solid #c7c6c5;
+	background-color: #e2e1df;
+	border-radius: 5px;
 }
 
 .copyright {
@@ -838,9 +838,12 @@ footer {
   /* Styles for the switch toggle button */
   .switch {
 	position: relative;
-	display: inline-block;
+	display: block;
 	width: 60px;
 	height: 34px;
+	margin: 0 auto;
+	text-align: center;
+	
   }
   
   .switch input {
