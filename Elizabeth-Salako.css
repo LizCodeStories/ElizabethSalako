@@ -259,9 +259,11 @@ a:hover {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	background-image: url("IMG_0879.JPG");
+	background-image: url("IMG_9501.JPG");
 	border-radius: 8px;
 	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
 }
 
 .Hero:before {
@@ -278,6 +280,7 @@ a:hover {
 	margin-left: 15px;
 	color: #000;
 	z-index: 9;
+	font-weight: 600;
 }
 
   .Main-opening {
@@ -303,6 +306,7 @@ a:hover {
 	justify-content: space-around;
 	font-family: 'Quicksand', sans-serif;
 	z-index: 10;
+	font-weight: 600;
 }
 
 .follow {
@@ -312,6 +316,7 @@ a:hover {
 	font-weight: bold;
 	font-size: 1.5rem;
 	margin-top: 10%;
+	font-weight: 800;
   }
 
   .follow2 {
@@ -803,6 +808,32 @@ footer {
 	color: #fff;
   }
 
+  .dark-mode .Hero {
+	background-color: #707182;
+	background-image: none;
+  }
+
+  .dark-mode .intro {
+	color: #fff;
+  }
+
+  .dark-mode .opening {
+	color: #fff;
+  }
+
+  .dark-mode .facts {
+	color: #fff;
+  }
+
+  .dark-mode .follow{
+	color: #ffbf45;
+  }
+
+  .dark-mode .Skills {
+	color: #ffbf45;
+  }
+
+
   
   /* Styles for the switch toggle button */
   .switch {
@@ -825,9 +856,12 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
 	transition: .4s;
 	border-radius: 34px;
+	background-image: url("IMG_9483.JPG");
+	background-size: cover;
+  	background-position: center;
   }
 
   .slider:hover {
@@ -857,11 +891,14 @@ footer {
   
   /* Additional styles for the switch toggle button in dark mode */
   input:checked + .slider {
-	background-color: #c7a25d;
+	/*background-color: #c7a25d;*/
+	background-image: url("IMG_9486.JPG");
+	background-size: cover;
+  background-position: center;
   }
   
   input:checked + .slider:before {
-	background-color: #000;
+	background-color: #fff;
   }
 
 
@@ -897,10 +934,11 @@ footer {
 		display: flex;
 		flex-direction: column;
 		overflow-y: hidden;
-		background-image: url("IMG_0879.JPG");
+		background-image: url("IMG_9501.JPG");
 		border-radius: 5px;
 		padding: 5%;
-		
+		background-size: cover;
+  	background-position: center;
 	}
 
 	 .Avatar-Me {
@@ -1149,6 +1187,7 @@ text-shadow: 7px #D6AD60;
 		.follow {
 			font-size: 20px;
 			text-align: center;
+			font-weight: bolder;
 		}
 	
 
