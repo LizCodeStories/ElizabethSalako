@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&family=Inter+Tight&family=Manjari&family=Quicksand:wght@500&family=Varela&display=swap');
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -55,6 +56,7 @@
   }
   /*
 
+  
 
 /* html */
 html,
@@ -232,6 +234,11 @@ a:hover {
   .github-link:hover {
 	color: #122620;
   }
+
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
  
   .liz-card {
 	text-align: center;
@@ -239,6 +246,12 @@ a:hover {
 	color: #a27521;
 	letter-spacing: 0.3em;
 	font-size: 1rem;
+  }
+
+
+
+  .Avatar-Me {
+	animation: fadeIn 1.5s ease-in;
   }
 
 /* About Me Paragraph */
@@ -318,6 +331,8 @@ a:hover {
   }
 
   /* Social Media Buttons */
+
+
 .fa-linkedin {
 	background: #000000;
 	color: white;
@@ -331,6 +346,7 @@ a:hover {
   	border-radius: 60%;
 	justify-content: center;
   	align-items: center;
+	  animation: fadeIn 1.1s ease-in;
 }
 
 
@@ -347,6 +363,7 @@ a:hover {
   	border-radius: 60%;
 	justify-content: center;
   	align-items: center;
+	  animation: fadeIn 1.1s ease-in;
 }
 
 .fa-github { 
@@ -362,6 +379,7 @@ a:hover {
   	border-radius: 60%;
 	justify-content: center;
   	align-items: center;
+	animation: fadeIn 1.1s ease-in;
 }
 
 .fa:hover {
@@ -412,6 +430,10 @@ border-radius: 5px;
 	align-items: center;
 	flex-wrap: wrap;
 
+}
+
+.one-project {
+	animation: fadeIn 1.5s ease-in;
 }
 
 .Hero-resume-body {
@@ -688,11 +710,135 @@ footer {
 	padding-bottom: 3%;
 }
 
+/* Toggle*/
 
 
-.green-footer {
-	background-color: #F5F5F5;
-}
+:root {
+	--bg-color: #ffffff; /* Light mode background color */
+	--text-color: #000000; /* Light mode text color */
+  }
+  
+  .dark-mode {
+	--bg-color: #444551; /* Dark mode background color */
+	--text-color: #ffffff; /* Dark mode text color */
+  }
+  
+  body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+  }
+  
+  /* Additional styles for dark mode */
+  body.dark-mode {
+	background-color: #444551;
+	color: #000;
+  }
+
+
+  .dark-mode .nav-branding {
+	color: white;
+  }
+
+  .dark-mode .Hero-resume-body {
+	background-color: #707182;
+  }
+
+  .dark-mode .wrapper {
+	background-color: #444551;
+  }
+
+  .dark-mode .project-body {
+	background-color: #707182;
+  }
+
+  .dark-mode .Resume-opening {
+	color: #fff;
+  }
+
+  .dark-mode .lists1 {
+	color: #fff;
+  }
+
+  .dark-mode .lists {
+	color: #fff;
+  }
+
+  .dark-mode .list-of-skills {
+	color: #fff;
+  }
+
+  .dark-mode .project-opening {
+	color: #fff;
+  }
+
+  .dark-mode .coffee-shop-info {
+	color: #fff;
+  }
+
+  .dark-mode .bar {
+	background-color: #D6AD60;
+  }
+
+  
+  /* Styles for the switch toggle button */
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border-radius: 34px;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: .4s;
+	border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3; /* Color when toggle is on */
+  }
+  
+  input:checked + .slider:before {
+	transform: translateX(26px);
+  }
+  
+  /* Additional styles for the switch toggle button in dark mode */
+  input:checked + .slider {
+	background-color: #c7a25d;
+  }
+  
+  input:checked + .slider:before {
+	background-color: #000;
+  }
+
+
+/*Toggle*/
+
+
 
 .footer-home {
 	margin-right: 10px;
@@ -727,6 +873,11 @@ footer {
 		padding: 5%;
 		
 	}
+
+	 .Avatar-Me {
+		animation: fadeIn 1.5s ease-in;
+	  }
+	
 
 	.main {
 		display: flex;
@@ -766,6 +917,10 @@ footer {
 		padding-right: 4rem;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.one-project {
+		animation: fadeIn 1.5s ease-in;
 	}
 
 	header {

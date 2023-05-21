@@ -13,4 +13,17 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove("active");
     }))
 
-   
+    var darkModeToggle = document.getElementById('dark-mode-toggle');
+    var pageContainer = document.getElementById('page-container');
+    
+    
+    var darkModeToggle = document.getElementById('dark-mode-toggle');
+    var body = document.body;
+    
+    darkModeToggle.addEventListener('change', function() {
+      if (darkModeToggle.checked) {
+        body.classList.add('dark-mode');
+      } else {
+        body.classList.remove('dark-mode');
+      }
+    });
