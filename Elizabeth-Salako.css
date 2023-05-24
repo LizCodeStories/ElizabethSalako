@@ -856,8 +856,10 @@ footer {
   }
 
   .dark-mode .Hero {
-	background-color: #707182;
-	background-image: none;
+	background-image: url("IMG_9499.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
   }
 
   .dark-mode .intro {
@@ -949,7 +951,7 @@ footer {
   }
   
   input:checked + .slider {
-	background-color: #2196F3; /* Color when toggle is on */
+	background-color: #fff; /* Color when toggle is on */
   }
   
   input:checked + .slider:before {
