@@ -2,16 +2,17 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-   
-})
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-document.querySelectorAll(".nav-link").forEach(n => n. 
-    addEventListenerListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }))
+document.querySelectorAll(".nav-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  });
+});
+
 
     var darkModeToggle = document.getElementById('dark-mode-toggle');
     var pageContainer = document.getElementById('page-container');
@@ -67,3 +68,47 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Smooth scroll function
+function smoothScroll(target) {
+  const element = document.querySelector(target);
+  const offset = 60; // Adjust this value to offset the scroll position if you have a fixed header
+  const scrollDuration = 800; // Adjust this value to control the scroll duration in milliseconds
+
+  if (element) {
+    const targetPosition = element.offsetTop - offset;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function scrollToTop(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const scrollProgress = Math.min(timeElapsed / scrollDuration, 1);
+      const scrollValue = startPosition + distance * easeInOutCubic(scrollProgress);
+      window.scrollTo(0, scrollValue);
+
+      if (timeElapsed < scrollDuration) {
+        requestAnimationFrame(scrollToTop);
+      }
+    }
+
+    function easeInOutCubic(t) {
+      return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+    }
+
+    requestAnimationFrame(scrollToTop);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.nav-item a');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = this.getAttribute('href');
+      smoothScroll(target);
+    });
+  });
+});

@@ -63,6 +63,7 @@ html,
 html * {
 	box-sizing: border-box;
 	position: relative;
+	scroll-behavior: smooth;
 }
 
 
@@ -253,6 +254,10 @@ a:hover {
 	border-radius: 4px;
 }
 
+.card2 {
+	background-color: #f5f5f5;
+}
+
 
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
@@ -298,7 +303,8 @@ a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
   	background-position: center;
-	
+	background-attachment:fixed;
+	animation: fadeIn 1.5s ease-in;
 }
 
 .Hero:before {
@@ -486,7 +492,11 @@ border-radius: 5px;
 }
 
 .Hero-resume-body {
-	background: #ecedeb;
+	background-image: url("Untitled_Artwork 2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
+	background-attachment: fixed;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -494,9 +504,42 @@ border-radius: 5px;
 }
 
 .project-body {
-	background-color: #ecedeb;
-	border-radius: 7px;
+	background-image: url("Untitled_Artwork 2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
+	background: fixed;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	animation: fadeIn 1.5s ease-in;
 }
+.project-logo {
+	width: 200px;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	background: fixed;
+  }
+
+  .work-logo {
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	background: fixed;
+  }
+
+  
 
 .coffee-shop-info {
 	text-align: center;
@@ -507,6 +550,10 @@ border-radius: 5px;
 }
 
 /* Resume Section */
+
+.work-card {
+
+}
 
 .Resume-header {
 	border-bottom: 1px solid #D6AD60;
@@ -526,7 +573,7 @@ border-radius: 5px;
   }
 
 .resume-card {
-	background: #f0efeb;
+	
 	position: relative;
 	border-radius: 7px;
 	width: 60%;
@@ -617,17 +664,68 @@ border-radius: 5px;
 }
 
 .resume-container {
-	padding: 2px 16px;
-	border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+  }
+  
+  .work-card, .skills-card {
+	background-color: #f4f4f4;
+	padding: 1rem;
+  }
+  
+  .work-card h4, .skills-card h4 {
+	margin-top: 0;
+  }
+  
+  .skills-card {
+	margin-top: 2rem;
   }
 
-  .city-of-meriden-date {
+  .work-card {
+	margin-top: 2rem;
+  }
+
+  .experience-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.3em;
+	color: #B68D40;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .experiences-title {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #104210;
-	font-weight: bold;  
+	font-weight: bold;
 	font-size: 1.2em;
 	align-items: center;
-}
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .experience-date {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .type-of-job {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: #986300;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+  }
 
 .resume-paragraph-card {
 	font-family: 'Raleway', sans-serif;
@@ -681,6 +779,9 @@ border-radius: 5px;
 
 .All-Stills:hover {
 	box-shadow: 0 8px 16px 0 rgba(1,0,0,0.1);
+}
+.Hero-resume-body {
+
 }
 
 .resume-opening {
@@ -749,8 +850,7 @@ footer {
 	padding: 0%;
 	display: flow-root;
 	border-top: 1px solid #E2E1DF;
-	border-radius: 10px;
-	
+
 }
 
 .copyright {
@@ -860,6 +960,8 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
   	background-position: center;
+	background-attachment: fixed;
+	animation: fadeIn 1.5s ease-in;
   }
 
   .dark-mode .intro {
@@ -899,8 +1001,20 @@ footer {
 	background-color: #444551;
   }
  
-  .dark-mode .nav-link {
- }
+.dark-mode .work-card {
+	background-color: #a1a1b6;
+}
+
+.dark-mode .skills-card {
+	background-color: #a1a1b6;
+}
+
+.dark-mode .experience-header {
+	color: #fff;
+}
+.dark-mode .experiences-title {
+	color: #fff;
+}
   /* Styles for the switch toggle button */
   .switch {
 	position: relative;
@@ -1487,5 +1601,25 @@ text-shadow: 7px #D6AD60;
 	width: calc(100% + 10px);
 	height: calc(100% + 10px);
 	opacity: 1;
+  }
+  
+  /* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #122620;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(160, 169, 155);
   }
   
