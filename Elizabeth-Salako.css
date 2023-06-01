@@ -570,7 +570,7 @@ border-radius: 5px;
   .gallery-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 30px;
+	grid-gap: 1rem;
 	margin-top: 20px;
   }  
 
@@ -594,12 +594,10 @@ border-radius: 5px;
 	grid-column: 2; /* Place the container in the second column of the grid */
 	text-align: right; /* Align the image to the right within the container */
   }
-  
+ 
 /* Resume Section */
 
-.work-card {
 
-}
 
 .Resume-header {
 	border-bottom: 1px solid #D6AD60;
@@ -716,7 +714,7 @@ border-radius: 5px;
   }
   
   .work-card, .skills-card {
-	background-color: #f4f4f4;
+	background-color: #f7f7f7;
 	padding: 1rem;
   }
   
@@ -1507,7 +1505,11 @@ text-shadow: 7px #D6AD60;
 				justify-content: center;
 			}
 		}
+
+		
 	}
+
+
 
 
 /* Loading Screen*/
@@ -1667,5 +1669,183 @@ text-shadow: 7px #D6AD60;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
 	background: rgb(160, 169, 155);
+  }
+  
+  /* Add a media query for Galaxy Fold devices */
+@media screen and (max-width: 280px) {
+	/* Update the styles for smaller screens */
+	.header {
+	  flex-direction: column;
+	}
+  
+	.nav-menu {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.hamburger {
+	  display: block;
+	}
+  
+	.nav-item::before {
+	  display: none;
+	}
+  
+	.navbar {
+	  padding: 0 10px;
+	}
+  
+	.Hero img {
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+  
+	.card {
+	  width: 280px;
+	  margin-bottom: 20px;
+
+	}
+	.liz-card {
+		text-align: center;
+		font-family: 'Inter', sans-serif;
+		color: #B68D40;
+		letter-spacing: 0.3em;
+		padding: 1%;
+		font-size: .6rem;
+	  }
+	  .paragraph-card {
+		font-size: .75rem;
+		
+	  }
+	  .container {
+		width: 100%;
+		margin: 0 auto;
+
+	  }
+	  .intro-card h2 {
+		font-size: 1.2rem;
+
+	  }
+	  .intro-card p {
+		font-size: 0.7rem;
+		line-height: 1.2;
+		overflow: hidden;
+		margin: auto 30px;
+	  }
+	  
+	  .intro-card .facts {
+		margin-top: 20px;
+	  }
+	  
+	  .intro-card .social-icons {
+		text-align: center;
+		margin-top: 10px;
+	  }
+	  
+	  .intro-card .social-icons a {
+		font-size: 25px;
+		/* Add additional styles to make the buttons smaller */
+		width: 30px;
+		height: 30px;
+		padding: 0 0 20px;
+	  }
+	  .project-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0 20px;
+		max-width: 100%;
+		overflow-x: hidden;
+	  }
+	  .project-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0 20px;
+		max-width: 100%;
+		overflow-x: hidden;
+
+	  }
+
+	  .project-logo {
+		width: 70%;
+		margin-bottom: 20px;
+	  }
+
+	  .work-logo {
+		width: 100%;
+		margin-bottom: 20px;
+
+	  }
+	  .resume-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0 20px;
+		max-width: 100%;
+		overflow-x: hidden;
+
+	  }
+
+	  .experience-header {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1em;
+		color: #B68D40;
+		font-weight: bold;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+
+	  }
+
+	  .experiences-title {
+		font-family: 'Source Sans Pro', sans-serif;
+		color: #104210;
+		font-weight: bold;
+		font-size: .90em;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+
+	  }
+
+	  .experience-date {
+		font-family: 'Raleway', sans-serif;
+		font-size: .90em;
+		color: #000000;
+		font-weight: bold;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  .type-of-job {
+		font-family: 'Raleway', sans-serif;
+		font-size: .90em;
+		color: #986300;
+		font-weight: bold;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  .nav-branding {
+		font-size: 1.2rem;
+		color: #122620;
+	  }
+
+	  .opening {
+		font-size: 1.2rem;
+		color: #986300;
+
+	  }
+  
+	/* Update other styles as needed */
   }
   

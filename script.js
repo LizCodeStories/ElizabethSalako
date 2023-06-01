@@ -29,6 +29,9 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
       }
     });
 
+    
+  
+
     // Loading screen
    // Wait for the page to finish loading
 window.addEventListener('load', function() {
@@ -59,6 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var i = 0;
   var typingEffect = setInterval(function() {
     if (i < text.length) {
+      if (text.charAt(i) === ',') {
+        i++;
+      }
       textElement.innerText += text.charAt(i);
       i++;
     } else {
@@ -66,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }, 100);
 });
+
 
 
 // Smooth scroll function
