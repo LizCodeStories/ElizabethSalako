@@ -480,11 +480,7 @@ border-radius: 5px;
 
 
 
-.project-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 20px;
-  }
+
 
 .one-project {
 	animation: fadeIn 1.5s ease-in;
@@ -503,17 +499,18 @@ border-radius: 5px;
 }
 
 .project-body {
-	background-image: url("Untitled_Artwork 2.png");
+	background-image: url("Untitled_Artwork\ 3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-  	background-position: center;
-	background: fixed;
+	background-position: center;
+	background-attachment: fixed;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	border-radius: 8px;
 	animation: fadeIn 1.5s ease-in;
 }
+
 .project-logo {
 	width: 200px;
 	height: auto;
@@ -538,66 +535,76 @@ border-radius: 5px;
 	background: fixed;
   }
 
+ 
+  .project-card {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	margin: 30px auto;
+  }
   
-.coffee-shop-section.left {
-    text-align: left;
-}
+  .project-container {
+	position: relative;
+	text-align: left;
+	
+  }
 
-.coffee-shop-info {
+  .description {
+	font-size: .9rem;
+	margin-top: 1%;
+	margin-bottom: 5%;
+  }
+
+  .fancy-button {
+	display: inline-block;
+	padding: 5px 30px;
+	background-color: #fff;
+	color: #122620;
+	border: 1px solid #f3f3f3;
+	border-radius: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  .fancy-button:hover {
+	background-color: #E2E1DF;
+	color: #000;
+	transition: 0.7s ease;
+  }
+  
+
+  
+  .card-content {
+	padding: 20px;
+  }
+  
+  .project-title {
+	font-size: 18px;
+	margin-bottom: 8px;
 	text-align: center;
+	font-family: 'Raleway', sans-serif;
+  }
+  
+  .coffee-shop-info {
+	text-align: right;
 	display: block;
 	font-size: 1.3rem;
 	margin-top: 1%;
 	margin-bottom: 5%;
-}
-.project-container {
-	position: relative;
-	text-align: center;
   }
   
-  .project-caption {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-	color: #fff;
-	padding: 10px;
-	font-size: 14px;
-  }
-
-  
-  .gallery-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1rem;
-	margin-top: 20px;
-  }  
-
-  .gallery-item {
-	position: relative;
-	margin-bottom: 0.8rem;
-  }
-
   .coffee-shop-section .project-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) 1fr; /* Add an additional column for the game container */
-	grid-gap: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	align-self: flex-start;
+	gap: 40px;
   }
   
-  .coffee-shop-wrap {
-	grid-column: 1; /* Place the coffee shop project in the first column of the grid */
-	text-align: left; /* Align the content to the left within the coffee shop project */
-  }
-  
-  .game-container {
-	grid-column: 2; /* Place the container in the second column of the grid */
-	text-align: right; /* Align the image to the right within the container */
-  }
- 
-/* Resume Section */
-
-
 
 .Resume-header {
 	border-bottom: 1px solid #D6AD60;
@@ -631,27 +638,6 @@ border-radius: 5px;
 	text-align: right;
 	font-size: 1.7rem;
 	font-weight: bold;
-}
-
-.resume-link {
-	color: #122620;
-	font-family: 'Raleway', sans-serif;
-	text-align: right;
-	
-}
-
-.link-resume {
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	color:#D6AD60;
-	font-size: 1em;
-	justify-content: right;
-}
-
-.link-resume:hover {
-	cursor: pointer;
-	color: #104210;
-	font-size: 1em;
 }
 
 
@@ -809,24 +795,28 @@ border-radius: 5px;
 	flex-direction: column;
 }
 
-.list-of-skills {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-	list-style: none;
-}
+.calc-img {
+	width: 500px;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	background: fixed;
+  }
 
-.All-Skills {
-	justify-content: space-between;
-	display: flex;
-	flex-direction: column;
-}
+ .project-calc {
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	color: #000;
+	letter-spacing: 0.3em;
+ }
 
-.All-Stills:hover {
-	box-shadow: 0 8px 16px 0 rgba(1,0,0,0.1);
-}
-.Hero-resume-body {
 
-}
+
+
 
 .resume-opening {
 	color: #000000;
@@ -866,23 +856,7 @@ border-radius: 5px;
 	flex-direction: column;
 }
 
-.Education {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.5em;
-	display: flex;
-	flex-direction: column;
-	color: #B68D40;
-}
 
-.the-list-of-school {
-	list-style: none;
-}
-
-.tech-skills {
-	list-style: none;
-	font-size: .9rem;
-	
-}
 
   /* footer */
 footer {
@@ -1222,6 +1196,17 @@ footer {
 		flex-direction: column;
 		border-radius: 5px;
 	}
+
+	.coffee-shop-section .project-grid {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		align-self: flex-start;
+		gap: 40px;
+	  }
 
 	.one-project {
 		animation: fadeIn 1.5s ease-in;
@@ -1727,7 +1712,7 @@ text-shadow: 7px #D6AD60;
 
 	  }
 	  .intro-card p {
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 		line-height: 1.2;
 		overflow: hidden;
 		margin: auto 30px;
@@ -1845,7 +1830,121 @@ text-shadow: 7px #D6AD60;
 		color: #986300;
 
 	  }
+
+	  .fancy-button {
+		font-size: .75em;
+		color: #122620;
+		background-color: #fff;
+		border: 1px solid #986300;
+		border-radius: 5px;
+		padding: 5px 0px;
+		transition: all 0.3s ease;
+	  }
   
 	/* Update other styles as needed */
   }
   
+  /* Ipad Mini */
+  @media screen and (max-width: 768px) {
+	.main {
+	padding: 0 20px;		
+	width: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	}
+	.opening {
+		font-size: 1.2rem;
+		color: #986300;
+		text-align: center;
+	  }
+	  
+	  .coffee-shop-section .project-grid {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		align-self: flex-start;
+		gap: 40px;
+
+	  }
+
+	  .project-title {
+		font-size: 1.2rem;
+		
+		text-align: center;
+	  }
+
+	  .project-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0 20px;
+		max-width: 100%;
+		overflow-x: hidden;
+
+	  }
+	
+	}
+
+	/* Ipad Pro */
+	@media screen and (max-width: 1024px) {
+		.main {
+		padding: 0 20px;		
+		width: auto;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	
+		}
+		.opening {
+			font-size: 1.2rem;
+			color: #986300;
+			justify-content: center;
+		  }
+		  .coffee-shop-section .project-grid {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			overflow-y: hidden;
+			-webkit-overflow-scrolling: touch;
+			align-self: flex-start;
+			gap: 40px;
+
+		  }
+
+		  .project-title {
+			font-size: 1.2rem;
+			
+			text-align: center;
+		  }
+
+		  .project-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 0 20px;
+			max-width: 100%;
+			overflow-x: hidden;
+
+		  }
+		}
+		
+
+		/* Ipad Pro */
