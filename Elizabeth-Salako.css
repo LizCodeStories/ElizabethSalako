@@ -860,6 +860,10 @@ border-radius: 5px;
 	flex-direction: column;
 }
 
+.work-logo-dark {
+	visibility: hidden;
+}
+
 
 
   /* footer */
@@ -904,7 +908,7 @@ footer {
   
   /* Additional styles for dark mode */
   body.dark-mode {
-	background-color: #444551;
+	background-color: #2d2e3c;
 	color: #000;
   }
 
@@ -914,16 +918,23 @@ footer {
   }
 
   .dark-mode .Hero-resume-body {
-	background-color: #707182;
+	background-color: #a1a1b6;
   }
 
   .dark-mode .wrapper {
-	background-color: #444551;
+	background-color: #2d2e3c;
+  }
+
+  .dark-mode .copyright {
+	color: #fff;
   }
 
   .dark-mode .project-body {
-	background-color: #707182;
+	background-color: #838392;
+	background-image: none;
   }
+
+  
 
   .dark-mode .Resume-opening {
 	color: #fff;
@@ -942,6 +953,15 @@ footer {
   }
 
   .dark-mode .project-opening {
+	color: #fff;
+  }
+
+  .dark-mode .project-card {
+	background-color: #2b2d45;
+  }
+  
+
+  .dark-mode .project-title {
 	color: #fff;
   }
 
@@ -984,6 +1004,7 @@ footer {
   	background-position: center;
 	background-attachment: fixed;
 	animation: fadeIn 1.5s ease-in;
+	transition: 0.7s ease;
   }
 
   .dark-mode .intro {
@@ -1007,7 +1028,7 @@ footer {
   }
 
   .dark-mode .intro-card {
-	background-color: #a3a3ae;
+	background-color: #838392;
   }
 
   .dark-mode .intro-card p {
@@ -1031,12 +1052,19 @@ footer {
 	background-color: #a1a1b6;
 }
 
+.dark-mode .type-of-job {
+	color: #293082;
+	font-weight: 800;
+}
+
 .dark-mode .experience-header {
 	color: #fff;
 }
 .dark-mode .experiences-title {
 	color: #fff;
 }
+
+
   /* Styles for the switch toggle button */
   .switch {
 	position: relative;
