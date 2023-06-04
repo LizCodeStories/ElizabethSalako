@@ -1920,7 +1920,7 @@ text-shadow: 7px #D6AD60;
 		justify-content: center;
 		align-items: center;
 		margin: 0;
-		padding: 0 20px;
+		padding: 0 0;
 		max-width: 100%;
 		overflow-x: hidden;
 
@@ -1971,7 +1971,7 @@ text-shadow: 7px #D6AD60;
 			justify-content: center;
 			align-items: center;
 			margin: 0;
-			padding: 0 20px;
+			padding: 0 0;
 			max-width: 100%;
 			overflow-x: hidden;
 
