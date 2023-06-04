@@ -600,12 +600,13 @@ border-radius: 5px;
   .coffee-shop-section .project-grid {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 	overflow-x: auto;
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
 	align-self: flex-start;
 	gap: 20px;
+	justify-content: space-around;
 	align-items: center;
   }
   
