@@ -487,7 +487,7 @@ border-radius: 5px;
 }
 
 .Hero-resume-body {
-	background-image: url("Untitled_Artwork 2.png");
+	background-image: url("IMG_9491.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
   	background-position: center;
@@ -496,6 +496,7 @@ border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 8px;
+	transition: 0.5s;
 }
 
 .project-body {
@@ -620,84 +621,6 @@ border-radius: 5px;
 	font-size: 1.2rem;
 }
 
-.main-resume {
-	width: 1130px;
-	max-width: 95%;
-	margin: 0 auto;
-	font-family: 'Raleway', sans-serif;
-	margin-top: 3%;
-  }
-
-.resume-card {
-	
-	position: relative;
-	border-radius: 7px;
-	width: 60%;
-	height: 500px;
-	padding: 1px;
-}
-/*Wait */
-.Resume-opening {
-	color: #122620;
-	font-family: 'Raleway', sans-serif;
-	text-align: right;
-	font-size: 1.7rem;
-	font-weight: bold;
-}
-
-
-.resume-card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-}
-
-.resume-paragraph {
-	text-align: left;
-	position: relative;
-	font-size: larger;
-	font-weight: bold;
-	display: flex;
-	flex-direction: column;
-}
-
-.list-skills {
-	text-align: left;
-	position: relative;
-	font-size: larger;
-	font-weight: bold;
-	color: #000000;
-}
-
-.skill-lists {
-	text-align: left;
-	position: relative;
-	z-index: 0;
-	font: 1em sans-serif;
-	font-size: 1.2rem;
-}
-
-
-.lists {
-	text-align: left;
-	position: relative;
-	font: 1em sans-serif;
-	font-size: 1.2rem;
-	display: flex;
-	flex-direction: column;
-	font-family: 'Raleway', sans-serif;
-	padding: 1px;
-}
-
-.lists1{
-	text-align: left;
-	position: relative;
-	font: 1em sans-serif;
-	font-size: 1.2rem;
-	display: flex;
-	flex-direction: column;
-	font-family: 'Raleway', sans-serif;
-	padding: 1px;
-}
-
 .resume-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -707,8 +630,16 @@ border-radius: 5px;
   .work-card, .skills-card {
 	background-color: #f7f7f7;
 	padding: 1rem;
+	box-shadow: 4px 6px 10px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	border-radius: 15px;
+	margin: 20px;
+
+	/* add animation */
+	animation: fadeIn 1.5s ease-in;
+
   }
-  
+
   .work-card h4, .skills-card h4 {
 	margin-top: 0;
   }
@@ -832,27 +763,7 @@ border-radius: 5px;
 	flex-direction: row;
 }
 
-.Hero-school {
-	text-align: left;
-	justify-content: space-around;
-	display: flex;
-	flex-direction: row;
-	font-family: 'Raleway', sans-serif;
-	font-size: 0.95em;
-	font-weight: bold;
-	color: #B68D40;
-	vertical-align: text-top; 
 
-}
-
-.list-attended {
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
-	font-family: 'Raleway', sans-serif;
-	color: #122620;
-	list-style: none;
-}
 
 
 .Hero-resume {
@@ -865,29 +776,29 @@ border-radius: 5px;
 	visibility: hidden;
 }
 
-
-
-  /* footer */
+/* footer */
 footer {
-	font-display: block;
-	position: relative;
-	width: auto;
-	text-align: end;
-	margin-bottom: 0%;
-	padding: 0%;
-	display: flow-root;
-	border-top: 1px solid #E2E1DF;
-
+  font-display: block;
+  position: relative;
+  width: auto;
+  text-align: end;
+  margin-bottom: 0%;
+  padding: 0%;
+  display: flow-root;
+  border-top: 1px solid #E2E1DF;
+  background-color: #f9f9f9;
+  border-radius: 30px 30px 0 0;
 }
 
 .copyright {
-	text-align: center;
-	font-size: 1em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #999999;
-	padding-top: 0%;
-	padding-bottom: 3%;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999;
+  padding-top: 0%;
+  padding-bottom: 3%;
 }
+
 
 /* Toggle*/
 
@@ -920,6 +831,7 @@ footer {
 
   .dark-mode .Hero-resume-body {
 	background-color: #a1a1b6;
+	background-image: none;
   }
 
   .dark-mode .wrapper {
@@ -1978,6 +1890,6 @@ text-shadow: 7px #D6AD60;
 
 		  }
 		}
-		
 
-		/* Ipad Pro */
+	
+  
