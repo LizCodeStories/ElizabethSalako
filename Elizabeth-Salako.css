@@ -790,6 +790,17 @@ footer {
   border-radius: 30px 30px 0 0;
 }
 
+.Based-CT {
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #104210;
+}
+
+.dark-mode .Based-CT {
+	color: #fff;
+  }
+
 .copyright {
   text-align: center;
   font-size: 1em;
