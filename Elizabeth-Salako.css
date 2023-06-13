@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&family=Inter+Tight&family=Manjari&family=Quicksand:wght@500&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Montserrat+Alternates:wght@500&family=Nanum+Gothic&family=Raleway&family=Rubik&family=Sarabun:wght@500&display=swap');
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -89,8 +90,9 @@ header {
 }
 
 .nav-branding {
-	font-size: 1.3rem;
-
+	font-size: 1.5rem;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 500;
 	display: inline-block;
 	padding: 5px 10px;
 	color: #1b1d3c;
@@ -101,14 +103,17 @@ header {
 }
 
 .nav-branding:hover {
-	color: #000000;
+	color: #104210;
 	background-color: transparent;
 	transform: scale(1.05);
+	transition: all 0.3s ease;
 }
 
 .name {
 	position: relative;
 	transition: all 0.3s ease;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 400;
   }
   
   .name::after {
@@ -136,6 +141,7 @@ header {
 .nav-item {
 	list-style: none;
 	position: relative;
+	font-size: 1.1rem;
 }
 
 .nav-item::before {
@@ -150,11 +156,12 @@ header {
   }
   
   .nav-item:hover::before {
-	background-color: rgb(87, 91, 160);	
+	background-color: #104210;
   }
   
   .nav-item.active::before {
 	background-color: gold;
+	transition: 0.5s ease-in;
   }
 
   
@@ -216,18 +223,16 @@ a:hover {
 
 
 .opening {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Sarabun', sans-serif;
 	letter-spacing: 0.13em;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
-	color: #986300;
-	font-style: normal;
-	font-size: 1.9em;
+	color: #104210;
+	font-size: 1.7em;
 	text-align: left;
 	margin-bottom: 1%;
 	margin-left: 2%;
-	margin-right: 5%;
 }
 
 
@@ -320,6 +325,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	background-image: url("IMG_9501.JPG");
+	padding: 20px;
 	border-radius: 8px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -533,28 +539,29 @@ border-radius: 5px;
 	animation: fadeIn 1.5s ease-in;
 }
 
-.project-logo {
-	width: 200px;
-	height: auto;
-	object-fit: cover;
-	object-position: center;
-	overflow: hidden;
-	margin: 0 auto;
-	position: relative;
-	display: block;
-	background: fixed;
+  .project-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.7em;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 5px;
   }
+	
+  
+ 
 
-  .work-logo {
-	width: 300px;
-	height: auto;
-	object-fit: cover;
-	object-position: center;
-	overflow: hidden;
-	margin: 0 auto;
-	position: relative;
-	display: block;
-	background: fixed;
+  .work-exp-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4em;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
   }
 
  
@@ -569,7 +576,12 @@ border-radius: 5px;
   .project-container {
 	position: relative;
 	text-align: left;
-	
+	background-color: #f2f2f2;
+  }
+
+  .img-hover {
+	transition: 0.5s ease-in-out;
+
   }
 
   .description {
@@ -608,7 +620,9 @@ border-radius: 5px;
 	font-size: 18px;
 	margin-bottom: 8px;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Sarabun', sans-serif;
+	font-weight: 400;
+	color: #122620;
   }
   
   .coffee-shop-info {
@@ -796,23 +810,49 @@ border-radius: 5px;
 
 /* footer */
 footer {
-  font-display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f9f9;
   position: relative;
   width: auto;
   text-align: end;
   margin-bottom: 0%;
   padding: 0%;
-  display: flow-root;
+  
   border-top: 1px solid #E2E1DF;
-  background-color: #f9f9f9;
+  
   border-radius: 30px 30px 0 0;
 }
 
 .Based-CT {
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #104210;
+	margin: 2px;
+}
+
+.Based-CT::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #B68D40;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+  }
+
+  .Based-CT:hover {
+	color: #B68D40;
+  }
+  
+  .Based-CT:hover::after {
+	transform: scaleX(1);
 }
 
 .dark-mode .Based-CT {
@@ -849,22 +889,24 @@ footer {
   
   /* Additional styles for dark mode */
   body.dark-mode {
-	background-color: #2d2e3c;
-	color: #000;
+	background-color: #222030;
+	
   }
 
 
-  .dark-mode .nav-branding {
-	color: white;
-  }
-
+ 
   .dark-mode .Hero-resume-body {
-	background-color: #a1a1b6;
-	background-image: none;
+	background-image: url("IMG_9498.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
+	background-attachment: fixed;
+	animation: fadeIn 1.5s ease-in;
+
   }
 
-  .dark-mode .wrapper {
-	background-color: #2d2e3c;
+  .dark-mode footer {
+	background-color: #222030;
   }
 
   .dark-mode .copyright {
@@ -872,10 +914,13 @@ footer {
   }
 
   .dark-mode .project-body {
-	background-color: #838392;
+	background-color: #413e5b;
 	background-image: none;
   }
 
+  .dark-mode .card-content {
+	background-color: #686887;
+  }
   
 
   .dark-mode .Resume-opening {
@@ -907,6 +952,10 @@ footer {
 	color: #fff;
   }
 
+  .dark-mode .project-header {
+	color: #fff;
+  }
+
   .dark-mode .coffee-shop-info {
 	color: #fff;
   }
@@ -917,6 +966,10 @@ footer {
 
   .dark-mode a {
 	color: #ffbf45;
+  }
+
+  .dark-mode .work-exp-header {
+	color: #fff;
   }
 
   .dark-mode .city-of-meriden-date {
@@ -983,7 +1036,6 @@ footer {
 
  .dark-mode .nav-branding {
 	color: #ffbf45;
-	background-color: #444551;
   }
  
 .dark-mode .work-card {
@@ -1090,12 +1142,21 @@ footer {
   }
 
   .email {
+	font-family: 'Montserrat Alternates', sans-serif;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	
+	font-size: 1.2em;
+	margin: 3px;
   }
+
+  .email:hover {
+	color: #B68D40;
+	transition: ease-in 0.4s;
+  }
+	
+  
 
   /* For Mobile Phone */
   @media only screen and (max-resolution: 150dpi) and (max-width: 767px), (min-width: 1023px ) and (orientation: portrait)
